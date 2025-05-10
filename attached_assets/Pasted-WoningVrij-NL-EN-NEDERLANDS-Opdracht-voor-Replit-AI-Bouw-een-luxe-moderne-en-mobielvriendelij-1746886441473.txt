@@ -1,0 +1,109 @@
+WoningVrij (NL/EN)
+
+NEDERLANDS:
+
+Opdracht voor Replit AI:
+Bouw een luxe, moderne en mobielvriendelijke website voor WoningVrij — een innovatief platform dat betaalbare woningen aanbiedt via een non-hypotheekstructuur zonder BKR-check. De site is gericht op uitleg, vertrouwen en conversie. Er is geen accountfunctionaliteit nodig.
+
+Ontwerpstijl:
+	•	Zwart-wit, grijstinten, accenten in goud of marineblauw
+	•	Minimalistische layout met veel witruimte
+	•	Typografie: Inter, Satoshi of Poppins
+	•	Mobile-first & volledig responsief
+	•	UI: sticky navigatie, smooth scroll, accordeons bij FAQ, zachte animaties
+
+Structuur & Inhoud:
+
+1. Home
+	•	Titel: “WoningVrij. Zonder BKR. Zonder hypotheek. Wél een woning.”
+	•	Subtitel: Via een non-hypotheekmodel kom je in aanmerking voor woningen van €200.000 tot €650.000 — van appartement tot villa.
+	•	CTA-knop: “Reserveer jouw woning”
+	•	Achtergrondbeeld: multiculturele groep jongeren (20–35) bij moderne woningen
+
+2. Wat is WoningVrij?
+	•	WoningVrij biedt woningen aan via een alternatief voor de hypotheek: een flexibele non-hypotheekstructuur zonder BKR-check
+	•	Criteria zijn soepel en afgestemd op jouw situatie (ook mogelijk zonder vast inkomen of loondienst)
+	•	Je hoeft geen ondernemer te zijn — elke situatie wordt beoordeeld
+
+3. Hoe werkt het?
+	•	4 visuele stappen:
+	1.	Koop een ticket (plek in de non-wachtrij)
+	2.	Kies locatie & woningtype (appartement, rijwoning of villa)
+	3.	Dien je gegevens in voor beoordeling
+	4.	Ontvang je voorstel en start het bouwtraject
+
+Let op: 500 plekken beschikbaar, verdeeld over 4 rondes. Wie het eerst komt, wie het eerst maalt.
+
+4. Woningen & locaties
+	•	Prijs: tussen €200.000 – €650.000
+	•	Type: appartementen, rijtjeshuizen, villa’s
+	•	Locaties: Amsterdam, Rotterdam, Utrecht, Almere, Eindhoven, Groningen
+	•	Duurzaam gebouwd, aanpasbaar naar wens
+
+5. Veelgestelde vragen
+	•	“Wat is een non-hypotheek?”
+	•	“Hoeveel borg moet ik betalen?”
+	•	“Is er een BKR-registratie?”
+	•	“Wat als ik geen inkomen heb?”
+	•	“Hoe snel kan ik beginnen?”
+
+6. Contactformulier
+	•	Naam, e-mailadres, woonplaats, interessebericht
+	•	E-mail: info@woningvrij.nl
+
+Techniek:
+	•	HTML + TailwindCSS (of React indien beschikbaar)
+	•	Static site, geen backend nodig
+	•	Gebruik mailto: voor formulieren
+
+ENGLISH VERSION (For Replit AI)
+
+Task for Replit AI:
+Build a luxurious, modern, mobile-optimized website for WoningVrij — a Dutch housing initiative that offers affordable homes through a non-mortgage structure without BKR (credit bureau) checks. The site should explain the model, build trust, and convert interest. No login or user accounts needed.
+
+Design:
+	•	Monochrome (black, white, grayscale) with gold/navy accents
+	•	Minimalist layout, spacious, elegant
+	•	Typography: Inter, Satoshi, or Poppins
+	•	Fully responsive, mobile-first
+	•	UI: sticky nav, smooth scroll, FAQ accordion, soft transitions
+
+Pages/Sections:
+
+1. Home
+	•	Headline: “WoningVrij. No mortgage. No BKR. Still a home.”
+	•	Subtitle: A flexible non-mortgage model to access homes from €200,000 to €650,000 — apartments, townhouses, or villas.
+	•	CTA: “Reserve your spot”
+	•	Background: multicultural young adults (20–35) in front of modern, sustainable Dutch homes
+
+2. What is WoningVrij?
+	•	WoningVrij offers homes without a traditional mortgage, using a flexible non-mortgage system
+	•	No BKR check or credit registration
+	•	No fixed employment required — each situation is reviewed individually
+
+3. How it works
+
+Visual flow of 4 steps:
+	1.	Buy a reservation ticket (non-waitlist entry)
+	2.	Choose your city and home type
+	3.	Submit your details for review
+	4.	Receive offer and start the process
+
+Note: Only 500 places available across 4 rounds. First come, first served.
+
+4. Homes & Locations
+	•	Price range: €200,000 – €650,000
+	•	Types: apartments, townhouses, villas
+	•	Cities: Amsterdam, Rotterdam, Utrecht, Almere, Eindhoven, Groningen
+	•	Sustainable and customizable designs
+
+5. FAQ
+	•	“What is a non-mortgage?”
+	•	“How much deposit is needed?”
+	•	“Is there a credit check involved?”
+	•	“Can I apply without income?”
+	•	“How quickly can I move in?”
+
+6. Contact
+	•	Name, email, location, message
+	•	Email: info@woningvrij.n

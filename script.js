@@ -1,26 +1,17 @@
-// Parallax header effect
-window.addEventListener("scroll", () => {
-  const scrolled = window.pageYOffset;
-  const parallax = document.querySelector(".parallax");
-  if (parallax) {
-    parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
-  }
-});
-
-// Fade-in animations on scroll
-const fadeEls = document.querySelectorAll(".fade-in");
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
-  });
-}, { threshold: 0.1 });
-
-fadeEls.forEach(el => observer.observe(el));
-
-// FAQ Accordion functionality
 document.addEventListener('DOMContentLoaded', function() {
+  // Fade-in animations on scroll
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  fadeEls.forEach(el => observer.observe(el));
+
+  // FAQ Accordion functionality
   const accordionTriggers = document.querySelectorAll('.accordion-trigger');
   
   accordionTriggers.forEach(trigger => {
@@ -43,10 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
-});
 
-// Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Navigation Toggle
   const navCheckbox = document.getElementById('nav__checkbox');
   const navMenuLinks = document.querySelectorAll('.nav__menu a');
   
@@ -56,10 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
       navCheckbox.checked = false;
     });
   });
-});
 
-// Smooth scroll to anchor links
-document.addEventListener('DOMContentLoaded', function() {
+  // Smooth scroll to anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -79,14 +66,20 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-});
 
-// Add sticky class to header on scroll
-window.addEventListener('scroll', function() {
+  // Add sticky class to header on scroll
   const header = document.querySelector('header');
-  if (window.scrollY > 0) {
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
+  const addStickyClass = () => {
+    if (window.scrollY > 0) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  };
+
+  // Initialize header state
+  addStickyClass();
+  
+  // Add event listener for scroll
+  window.addEventListener('scroll', addStickyClass);
 });

@@ -3,365 +3,386 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WoningVrij - Zakelijke Hypotheken zonder BKR</title>
-  <meta name="description" content="WoningVrij biedt zakelijke hypotheken zonder BKR aan mensen die normaal geen toegang krijgen tot een woning. Ontdek hoe wij u kunnen helpen.">
-  <link rel="stylesheet" href="style.css">
+  <title>WoningVrij - Zonder BKR. Zonder hypotheek. Wél een woning.</title>
+  <meta name="description" content="Via een non-hypotheekmodel kom je in aanmerking voor woningen van €200.000 tot €650.000 — van appartement tot villa.">
+  <link rel="stylesheet" href="style-new.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header met navigatie -->
   <header class="sticky">
-    <div class="inner-container">
+    <div class="container">
       <nav class="nav">
         <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
         <label for="nav__checkbox" class="nav__toggle">
-          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
-            <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+          <svg class="menu" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12h18M3 6h18M3 18h18"></path>
           </svg>
-          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
-            <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+          <svg class="close" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 6L6 18M6 6l12 12"></path>
           </svg>
         </label>
-        <ul id="nav-logo" class="nav__menu">
-          <li>
-            <a href="#">
-              <img src="https://firebasestorage.googleapis.com/v0/b/wallingapp.appspot.com/o/attachments%2FDFOrzPmkpaj9CzoI0k2L1pRQPt4i9wo0bAeIDNpWYGuuF6kSX5.png?alt=media" alt="WoningVrij Logo" />
-            </a>
-          </li>
-          <li><a href="#over-ons">Over ons</a></li>
+        <div class="nav__logo">
+          <a href="#">
+            <span>WoningVrij</span>
+          </a>
+        </div>
+        <ul class="nav__menu">
+          <li><a href="#wat-is">Wat is WoningVrij?</a></li>
           <li><a href="#hoe-werkt-het">Hoe werkt het</a></li>
-          <li><a href="#voordelen">Voordelen</a></li>
-          <li><a href="#steden">Steden</a></li>
+          <li><a href="#woningen">Woningen & Locaties</a></li>
           <li><a href="#faq">Veelgestelde vragen</a></li>
-          <li><a href="#contact" class="btn-primary">Contact</a></li>
+          <li><a href="#contact" class="btn-primary">Reserveer jouw woning</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero sectie met parallax effect -->
+  <!-- Hero section -->
   <section class="hero">
-    <div class="parallax-container">
-      <div class="parallax"></div>
-      <div class="hero-content inner-container">
-        <h1 class="fade-in">WoningVrij</h1>
-        <p class="fade-in">Zakelijke hypotheken zonder BKR voor mensen die normaal geen toegang krijgen tot de woningmarkt.</p>
-        <a href="#hoe-werkt-het" class="btn-primary fade-in">Bekijk hoe het werkt</a>
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="fade-in">
+          <span>WoningVrij.</span> 
+          <span>Zonder BKR.</span>
+          <span>Zonder hypotheek.</span>
+          <span>Wél een woning.</span>
+        </h1>
+        <p class="fade-in">Via een non-hypotheekmodel kom je in aanmerking voor woningen van €200.000 tot €650.000 — van appartement tot villa.</p>
+        <a href="#hoe-werkt-het" class="btn-primary fade-in">Reserveer jouw woning</a>
       </div>
     </div>
   </section>
 
-  <!-- Intro: Wat is WoningVrij? -->
-  <section id="over-ons" class="intro">
-    <div class="inner-container">
-      <h2 class="section-title fade-in">Wat is WoningVrij?</h2>
-      <div class="two-column">
-        <div class="column fade-in">
-          <p>WoningVrij is een innovatief platform dat zakelijke hypotheken aanbiedt aan mensen die bij traditionele geldverstrekkers tussen wal en schip vallen. Wij geloven dat iedereen recht heeft op een eigen woning, ongeacht uw type arbeidscontract of achtergrond.</p>
-          <p>Ons team van ervaren financiële specialisten begrijpt de uitdagingen van de huidige woningmarkt en biedt alternatieven voor mensen die:</p>
-          <ul>
-            <li>Zelfstandig ondernemer zijn</li>
-            <li>Flexwerker of freelancer zijn</li>
-            <li>Een buitenlands arbeidscontract hebben</li>
-            <li>Startende professionals zijn</li>
-            <li>Een atypisch inkomensprofiel hebben</li>
-          </ul>
+  <!-- Wat is section -->
+  <section id="wat-is" class="wat-is">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="fade-in">Wat is WoningVrij?</h2>
+      </div>
+      <div class="wat-is__grid">
+        <div class="wat-is__content fade-in">
+          <p>WoningVrij biedt woningen aan via een alternatief voor de hypotheek: een flexibele non-hypotheekstructuur zonder BKR-check.</p>
+          <p>Onze criteria zijn soepel en afgestemd op jouw situatie. Ook zonder vast inkomen of loondienst kom je mogelijk in aanmerking.</p>
+          <p>Je hoeft geen ondernemer te zijn — elke situatie wordt individueel beoordeeld op basis van jouw specifieke omstandigheden.</p>
         </div>
-        <div class="column fade-in">
-          <div class="feature-box">
-            <h3>Onze missie</h3>
-            <p>Het toegankelijk maken van de woningmarkt voor iedereen door innovatieve en flexibele financieringsoplossingen zonder BKR-toetsing.</p>
+        <div class="wat-is__features fade-in">
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <div class="feature__content">
+              <h3>Geen BKR-check</h3>
+              <p>Geen zorgen over BKR-registraties die je kansen op de woningmarkt blokkeren.</p>
+            </div>
           </div>
-          <div class="feature-box">
-            <h3>Onze aanpak</h3>
-            <p>We kijken verder dan de standaard criteria en bieden discrete, elegante oplossingen die passen bij uw unieke situatie.</p>
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="feature__content">
+              <h3>Flexibele criteria</h3>
+              <p>Soepelere voorwaarden dan traditionele hypotheekverstrekkers, afgestemd op jouw situatie.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="feature__content">
+              <h3>Zonder vast inkomen</h3>
+              <p>Ook zonder vast dienstverband of met een freelance inkomen maak je kans op een woning.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Hoe werkt het: uitleg in stappen -->
-  <section id="hoe-werkt-het" class="how-it-works">
-    <div class="inner-container">
-      <h2 class="section-title fade-in">Hoe het werkt</h2>
-      <p class="section-intro fade-in">In drie eenvoudige stappen naar uw eigen woning, zonder BKR-toetsing of andere gebruikelijke obstakels.</p>
-      
+  <!-- Hoe werkt het section -->
+  <section id="hoe-werkt-het" class="hoe-werkt-het">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="fade-in">Hoe werkt het?</h2>
+        <p class="fade-in">In vier eenvoudige stappen naar jouw eigen woning, zonder de gebruikelijke obstakels.</p>
+      </div>
       <div class="steps-container">
         <div class="step fade-in">
-          <div class="step-number">01</div>
-          <div class="step-content">
-            <h3>Oriëntatie & Contact</h3>
-            <p>Verken onze flexibele financieringsvormen en neem contact met ons op. Een adviseur belt u terug voor een eerste gesprek zonder verplichtingen.</p>
+          <div class="step__number">01</div>
+          <div class="step__content">
+            <h3>Koop een ticket</h3>
+            <p>Bemachtig een plek in de non-wachtrij door een ticket te kopen. Zo ben je verzekerd van een plek in één van onze rondes.</p>
           </div>
         </div>
         
         <div class="step fade-in">
-          <div class="step-number">02</div>
-          <div class="step-content">
-            <h3>Maatwerk voorstel</h3>
-            <p>Na een discreet intakegesprek ontvang u een op maat gemaakt voorstel dat volledig aansluit bij uw specifieke situatie en wensen.</p>
+          <div class="step__number">02</div>
+          <div class="step__content">
+            <h3>Kies locatie & woningtype</h3>
+            <p>Selecteer je favoriete stad en het type woning dat past bij jouw wensen: appartement, rijwoning of villa.</p>
           </div>
         </div>
         
         <div class="step fade-in">
-          <div class="step-number">03</div>
-          <div class="step-content">
-            <h3>Realisatie & Begeleiding</h3>
-            <p>Na akkoord begeleiden wij u door het volledige proces: van het opstellen van documenten tot het tekenen bij de notaris en de sleuteloverdracht.</p>
+          <div class="step__number">03</div>
+          <div class="step__content">
+            <h3>Dien je gegevens in</h3>
+            <p>Vul je persoonlijke gegevens in voor een individuele beoordeling van jouw situatie en mogelijkheden.</p>
+          </div>
+        </div>
+        
+        <div class="step fade-in">
+          <div class="step__number">04</div>
+          <div class="step__content">
+            <h3>Ontvang je voorstel</h3>
+            <p>Na goedkeuring ontvang je een voorstel en kan het bouwtraject voor jouw droomwoning beginnen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="notification fade-in">
+        <p><strong>Let op:</strong> Er zijn slechts 500 plekken beschikbaar, verdeeld over 4 rondes. Wie het eerst komt, wie het eerst maalt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Woningen & Locaties section -->
+  <section id="woningen" class="woningen">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="fade-in">Woningen & Locaties</h2>
+        <p class="fade-in">Diverse opties in heel Nederland, van appartementen tot villa's, aangepast naar jouw wensen.</p>
+      </div>
+      
+      <div class="woningen__grid">
+        <div class="woning-card fade-in">
+          <div class="woning-card__image woning-card__image--appartement"></div>
+          <div class="woning-card__content">
+            <h3>Appartementen</h3>
+            <p>Moderne appartementen in het centrum of aan de rand van de stad.</p>
+            <ul>
+              <li>Vanaf €200.000</li>
+              <li>50-100 m²</li>
+              <li>2-3 kamers</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="woning-card fade-in">
+          <div class="woning-card__image woning-card__image--rijtjes"></div>
+          <div class="woning-card__content">
+            <h3>Rijtjeshuizen</h3>
+            <p>Comfortabele gezinswoningen in rustige, kindvriendelijke buurten.</p>
+            <ul>
+              <li>Vanaf €350.000</li>
+              <li>100-150 m²</li>
+              <li>4-5 kamers</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="woning-card fade-in">
+          <div class="woning-card__image woning-card__image--villa"></div>
+          <div class="woning-card__content">
+            <h3>Villa's</h3>
+            <p>Vrijstaande luxe woningen met ruime tuin en privacygarantie.</p>
+            <ul>
+              <li>Vanaf €500.000</li>
+              <li>150-250 m²</li>
+              <li>5+ kamers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="locaties fade-in">
+        <h3>Beschikbare locaties</h3>
+        <div class="locaties__grid">
+          <div class="locatie">
+            <h4>Amsterdam</h4>
+            <p>Nieuw-West, Zuidoost, Noord</p>
+          </div>
+          <div class="locatie">
+            <h4>Rotterdam</h4>
+            <p>Prins Alexander, Zuid, Charlois</p>
+          </div>
+          <div class="locatie">
+            <h4>Utrecht</h4>
+            <p>Leidsche Rijn, Overvecht</p>
+          </div>
+          <div class="locatie">
+            <h4>Almere</h4>
+            <p>Poort, Buiten, Haven</p>
+          </div>
+          <div class="locatie">
+            <h4>Eindhoven</h4>
+            <p>Woensel, Meerhoven</p>
+          </div>
+          <div class="locatie">
+            <h4>Groningen</h4>
+            <p>Meerstad, Paddepoel</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Voordelen: in cards of iconen -->
-  <section id="voordelen" class="benefits">
-    <div class="inner-container">
-      <h2 class="section-title fade-in">Voordelen van WoningVrij</h2>
-      <p class="section-intro fade-in">Ontdek waarom steeds meer mensen kiezen voor een zakelijke hypotheek via WoningVrij.</p>
-      
-      <div class="benefits-grid">
-        <div class="benefit-card fade-in">
-          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-          </svg>
-          <h3>Toegankelijk</h3>
-          <p>Ook zonder vast dienstverband of met een flexibel inkomen kunt u in aanmerking komen voor financiering zonder BKR-toetsing.</p>
-        </div>
-        
-        <div class="benefit-card fade-in">
-          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-          </svg>
-          <h3>Flexibele voorwaarden</h3>
-          <p>Wij bieden oplossingen op maat met discrete voorwaarden die passen bij uw persoonlijke situatie.</p>
-        </div>
-        
-        <div class="benefit-card fade-in">
-          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          <h3>Snelle service</h3>
-          <p>Geen lange wachttijden; binnen enkele dagen weet u waar u aan toe bent en wat uw mogelijkheden zijn.</p>
-        </div>
-        
-        <div class="benefit-card fade-in">
-          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="3" y1="9" x2="21" y2="9"></line>
-            <line x1="9" y1="21" x2="9" y2="9"></line>
-          </svg>
-          <h3>Persoonlijke begeleiding</h3>
-          <p>Van begin tot eind staat een ervaren adviseur voor u klaar om het proces discreet en soepel te laten verlopen.</p>
-        </div>
-        
-        <div class="benefit-card fade-in">
-          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
-          <h3>Geen verborgen kosten</h3>
-          <p>Transparante en eerlijke tarieven zonder onaangename verrassingen achteraf.</p>
-        </div>
-        
-        <div class="benefit-card fade-in">
-          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-            <line x1="6" y1="1" x2="6" y2="4"></line>
-            <line x1="10" y1="1" x2="10" y2="4"></line>
-            <line x1="14" y1="1" x2="14" y2="4"></line>
-          </svg>
-          <h3>Innovatieve oplossingen</h3>
-          <p>Wij denken buiten de kaders en vinden elegante oplossingen waar traditionele geldverstrekkers stoppen.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Steden: 6 blokken met info -->
-  <section id="steden" class="cities">
-    <div class="inner-container">
-      <h2 class="section-title fade-in">Dienstverlening door heel Nederland</h2>
-      <p class="section-intro fade-in">Onze expertise strekt zich uit over heel Nederland, met specialisatie in deze zes kernregio's.</p>
-      
-      <div class="cities-grid">
-        <div class="city-card fade-in">
-          <h3>Amsterdam</h3>
-          <p>De hoofdstedelijke vastgoedmarkt kent eigen uitdagingen. Onze specialisten kennen de verborgen kansen.</p>
-          <ul>
-            <li>Kennis van monumentale panden</li>
-            <li>Expertise in erfpacht constructies</li>
-            <li>Netwerk van premium vastgoedobjecten</li>
-          </ul>
-        </div>
-        
-        <div class="city-card fade-in">
-          <h3>Rotterdam</h3>
-          <p>Rotterdam's innovatieve karakter biedt uitzonderlijke mogelijkheden voor zakelijke hypotheken.</p>
-          <ul>
-            <li>Specialisten in opkomende wijken</li>
-            <li>Expertise in bedrijfspanden</li>
-            <li>Discreet investeren in haven-projecten</li>
-          </ul>
-        </div>
-        
-        <div class="city-card fade-in">
-          <h3>Utrecht</h3>
-          <p>De centraal gelegen stad biedt zekere waardestijging met de juiste investeringsstrategie.</p>
-          <ul>
-            <li>Exclusieve toegang tot nieuwbouwprojecten</li>
-            <li>Discrete bemiddeling bij premium objecten</li>
-            <li>Specialisatie in hoogwaardige appartementen</li>
-          </ul>
-        </div>
-        
-        <div class="city-card fade-in">
-          <h3>Den Haag</h3>
-          <p>De diplomatieke hoofdstad van Nederland biedt stabiele investeringsmogelijkheden.</p>
-          <ul>
-            <li>Representatieve panden in het centrum</li>
-            <li>Expertise in kustlocaties</li>
-            <li>Netwerk van internationale investeerders</li>
-          </ul>
-        </div>
-        
-        <div class="city-card fade-in">
-          <h3>Eindhoven</h3>
-          <p>De technologische hoofdstad van Nederland kent een bloeiende vastgoedmarkt met hoog rendement.</p>
-          <ul>
-            <li>Specialisatie in technologie-district</li>
-            <li>Toegang tot exclusieve developments</li>
-            <li>Oplossingen voor kenniswerkers</li>
-          </ul>
-        </div>
-        
-        <div class="city-card fade-in">
-          <h3>Maastricht</h3>
-          <p>De zuidelijke provincie-hoofdstad biedt unieke kansen voor beleggers en eigenaar-bewoners.</p>
-          <ul>
-            <li>Expertise in monumentale binnenstad</li>
-            <li>Kennis van grensoverschrijdend vastgoed</li>
-            <li>Discrete bemiddeling voor exclusieve panden</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Veelgestelde Vragen: collapsible/accordion -->
+  <!-- FAQ section -->
   <section id="faq" class="faq">
-    <div class="inner-container">
-      <h2 class="section-title fade-in">Veelgestelde vragen</h2>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="fade-in">Veelgestelde vragen</h2>
+      </div>
       
       <div class="accordion-container">
         <div class="accordion-item fade-in">
-          <button class="accordion-trigger">Wat zijn zakelijke hypotheken zonder BKR-toetsing?</button>
+          <button class="accordion-trigger">Wat is een non-hypotheek?</button>
           <div class="accordion-content">
-            <p>Een zakelijke hypotheek zonder BKR-toetsing is een financieringsvorm waarbij een woning niet op uw persoonlijke naam, maar via een zakelijke structuur wordt gefinancierd, zonder dat hierbij naar uw persoonlijke kredietregistratie wordt gekeken. Dit biedt een oplossing voor diegenen die op basis van standaard criteria buiten de boot vallen bij traditionele geldverstrekkers.</p>
+            <p>Een non-hypotheek is een alternatieve financieringsvorm waarbij je een woning kunt verkrijgen zonder de traditionele bancaire hypotheek. Bij WoningVrij werken we met een uniek model waarbij je eigenaar wordt van de woning via een zakelijke constructie, zonder tussenkomst van een bank en zonder BKR-check.</p>
           </div>
         </div>
         
         <div class="accordion-item fade-in">
-          <button class="accordion-trigger">Kom ik in aanmerking als ik een BKR-registratie heb?</button>
+          <button class="accordion-trigger">Hoeveel borg moet ik betalen?</button>
           <div class="accordion-content">
-            <p>Ja, dat is juist onze specialiteit. Waar traditionele hypotheekverstrekkers personen met een BKR-codering vaak direct afwijzen, kijken wij naar andere indicatoren zoals uw huidige verdiencapaciteit, ondernemingsperspectief en vermogenspositie. Wij bieden discrete oplossingen die uw privacy respecteren.</p>
+            <p>De borg is afhankelijk van het type woning en jouw persoonlijke situatie. Doorgaans ligt dit tussen de 5% en 15% van de woningwaarde. Dit is aanzienlijk lager dan de gebruikelijke eigen inleg bij een traditionele hypotheek. Bij acceptatie van je aanvraag ontvang je een voorstel met het exacte borgbedrag.</p>
           </div>
         </div>
         
         <div class="accordion-item fade-in">
-          <button class="accordion-trigger">Wat zijn de voordelen van een zakelijke hypotheekconstructie?</button>
+          <button class="accordion-trigger">Is er een BKR-registratie?</button>
           <div class="accordion-content">
-            <p>Bij een zakelijke hypotheek kunt u profiteren van fiscale voordelen zoals aftrekbare onderhoudskosten, afschrijvingen en rentekosten. Daarnaast biedt het bescherming van uw privévermogen en creëert het mogelijkheden voor vermogensopbouw buiten het zicht van traditionele kredietbeoordelaars. Wij adviseren altijd om de specifieke voordelen te bespreken met een fiscaal adviseur.</p>
+            <p>Nee, dat is het unieke aan ons model. We kijken niet naar je BKR-registratie en er wordt geen nieuwe registratie toegevoegd. Dit maakt WoningVrij ideaal voor mensen met een BKR-notering die via de reguliere weg geen hypotheek kunnen krijgen.</p>
           </div>
         </div>
         
         <div class="accordion-item fade-in">
-          <button class="accordion-trigger">Hoe snel kan een financiering worden gerealiseerd?</button>
+          <button class="accordion-trigger">Wat als ik geen inkomen heb?</button>
           <div class="accordion-content">
-            <p>Voor urgente situaties kunnen wij binnen 2-3 weken tot een financieringsoplossing komen. In standaard gevallen duurt het volledige proces 4-5 weken. Onze directe lijnen met beslissers en ons netwerk van private financiers zorgen voor een aanzienlijk sneller proces dan bij traditionele geldverstrekkers.</p>
+            <p>Anders dan bij traditionele hypotheekverstrekkers kijken wij breder dan alleen naar inkomen uit loondienst. We beoordelen je totale financiële situatie, inclusief vermogen, potentiële toekomstige inkomsten en familie-ondersteuning. Ook zonder vast inkomen kun je in aanmerking komen, afhankelijk van je individuele situatie.</p>
           </div>
         </div>
         
         <div class="accordion-item fade-in">
-          <button class="accordion-trigger">Wat zijn de minimale en maximale financieringsbedragen?</button>
+          <button class="accordion-trigger">Hoe snel kan ik beginnen?</button>
           <div class="accordion-content">
-            <p>Onze zakelijke hypotheekoplossingen beginnen doorgaans vanaf €150.000 en kunnen oplopen tot €5.000.000 of meer voor bijzondere objecten. Wij werken met een netwerk van verschillende financiers die elk hun eigen specialisatie hebben qua objecttype en financieringshoogte.</p>
-          </div>
-        </div>
-        
-        <div class="accordion-item fade-in">
-          <button class="accordion-trigger">Hoe discreet is het aanvraagproces?</button>
-          <div class="accordion-content">
-            <p>Wij begrijpen het belang van discretie. Alle gesprekken en documentatie worden strikt vertrouwelijk behandeld. Onze processen zijn zo ingericht dat uw privacy maximaal wordt beschermd. Indien gewenst kunnen afspraken op neutrale locaties plaatsvinden en werken wij met discrete communicatielijnen.</p>
+            <p>Na aankoop van je ticket krijg je binnen 1-2 weken bericht over je plek in de ronde. Het volledige traject van aanvraag tot sleuteloverdracht duurt gemiddeld 6-12 maanden, afhankelijk van de locatie en het type woning. Dit is inclusief de bouwperiode. We streven ernaar het proces zo snel en soepel mogelijk te laten verlopen.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer: contactgegevens, geen formulier -->
-  <footer id="contact" class="footer">
-    <div class="inner-container">
+  <!-- Contact section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="fade-in">Neem contact met ons op</h2>
+        <p class="fade-in">Heb je vragen of wil je meer informatie? Laat je gegevens achter en we nemen binnen 24 uur contact met je op.</p>
+      </div>
+      
+      <div class="contact-container">
+        <form class="contact-form fade-in" action="mailto:info@woningvrij.nl" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="city">Woonplaats</label>
+            <input type="text" id="city" name="city" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary">Verstuur bericht</button>
+        </form>
+        
+        <div class="contact-info fade-in">
+          <div class="contact-info__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:info@woningvrij.nl">info@woningvrij.nl</a>
+          </div>
+          
+          <div class="contact-info__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>020 - 123 4567</span>
+          </div>
+          
+          <div class="contact-info__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <address>
+              Zuidas 123<br>
+              1082 MS Amsterdam
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
       <div class="footer-content">
-        <div class="footer-column fade-in">
-          <h3>WoningVrij</h3>
-          <p>Uw partner in zakelijke hypotheken zonder BKR-toetsing voor iedereen die tussen wal en schip valt bij traditionele geldverstrekkers.</p>
-          <p>Wij werken discreet, snel en met oog voor uw specifieke situatie.</p>
+        <div class="footer-logo">
+          <span>WoningVrij</span>
+          <p>Zonder BKR. Zonder hypotheek. Wél een woning.</p>
         </div>
         
-        <div class="footer-column fade-in">
-          <h3>Contact</h3>
-          <ul class="contact-info">
-            <li>
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <span>Zuidas Business Tower<br>1082 MD Amsterdam</span>
-            </li>
-            <li>
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              <a href="mailto:info@woningvrij.nl">info@woningvrij.nl</a>
-            </li>
-            <li>
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              <a href="tel:+31203050677">+31 (0)20 305 0677</a>
-            </li>
+        <div class="footer-links">
+          <h3>Navigatie</h3>
+          <ul>
+            <li><a href="#wat-is">Wat is WoningVrij?</a></li>
+            <li><a href="#hoe-werkt-het">Hoe werkt het</a></li>
+            <li><a href="#woningen">Woningen & Locaties</a></li>
+            <li><a href="#faq">Veelgestelde vragen</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         
-        <div class="footer-column fade-in">
-          <h3>Beschikbaarheid</h3>
-          <ul class="opening-hours">
-            <li><span>Maandag - Vrijdag:</span> <span>09:00 - 18:00</span></li>
-            <li><span>Zaterdag:</span> <span>10:00 - 15:00 (op afspraak)</span></li>
-            <li><span>Avondafspraken:</span> <span>Op verzoek mogelijk</span></li>
+        <div class="footer-legal">
+          <h3>Juridisch</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Algemene voorwaarden</a></li>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
           </ul>
-          <p class="footer-note">Wij zijn discreet en werken uitsluitend op afspraak.</p>
         </div>
       </div>
       
       <div class="footer-bottom">
         <p>&copy; 2025 WoningVrij. Alle rechten voorbehouden.</p>
-        <div class="footer-links">
-          <a href="#">Privacy</a>
-          <a href="#">Voorwaarden</a>
-          <a href="#">Disclaimer</a>
-          <a href="#">Cookies</a>
-        </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script-new.js"></script>
 </body>
 </html>
