@@ -175,6 +175,11 @@ header.sticky {
   transition: all var(--transition-medium);
 }
 
+header.sticky .logo-image {
+  filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(0deg);
+  mix-blend-mode: darken;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -193,6 +198,8 @@ header.sticky {
   height: 60px;
   width: auto;
   display: block;
+  mix-blend-mode: multiply;
+  filter: brightness(0) invert(0.85) sepia(1) saturate(5) hue-rotate(0deg);
 }
 
 .nav__checkbox {
@@ -808,6 +815,8 @@ header.sticky {
   width: auto;
   display: block;
   margin-bottom: var(--spacing-sm);
+  mix-blend-mode: lighten;
+  filter: brightness(0) invert(0.85) sepia(1) saturate(5) hue-rotate(0deg);
 }
 
 .footer-logo p {
