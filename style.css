@@ -303,6 +303,60 @@ header.sticky {
   font-weight: 300;
 }
 
+/* Parallax Section */
+.parallax-section {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--color-white);
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZXJuJTIwaG91c2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
+  z-index: -1;
+}
+
+.parallax-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.parallax-content h2 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .parallax-section {
+    height: 50vh;
+  }
+  
+  .parallax-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
 /* What is WoningVrij Section */
 .wat-is {
   background-color: var(--color-white);
