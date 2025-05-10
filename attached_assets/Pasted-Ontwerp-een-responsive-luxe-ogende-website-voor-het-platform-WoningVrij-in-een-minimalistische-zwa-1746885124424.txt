@@ -1,0 +1,47 @@
+Ontwerp een responsive, luxe ogende website voor het platform WoningVrij, in een minimalistische zwart-wit-grijs kleurenstijl. Geen felle kleuren. Alles straalt klasse, kalmte en vertrouwen uit — vergelijkbaar met premium merken of moderne architectenbureaus.
+
+De site is informatief (zonder account/login), mobielvriendelijk, en gericht op doelgroepen die op zoek zijn naar alternatieve woningfinanciering. Gebruik visuele rust, strakke typografie en veel witruimte.
+
+Visuele stijl:
+	•	Kleuren: zwart, wit, diverse grijstinten (lichtgrijs, antraciet, steen)
+	•	Typografie: gebruik Overpass voor titels en Mulish voor bodytekst (Google Fonts)
+	•	Indeling: veel whitespace, card-structuur, grote marges
+	•	Navigatie: strak hamburger-menu, fixed top navbar
+	•	CTA-buttons: subtiel, zwart met witte tekst of wit met dunne zwarte outline
+	•	Afbeeldingen: full-width, zwart-wit gefilterd of semi-transparant overlays
+
+Paginastructuur:
+	1.	Header (sticky):
+	•	Logo links (zwart-wit)
+	•	Hamburger menu rechts (minimalistisch SVG)
+	•	Geen felle hover-effecten
+	2.	Introsectie (hero):
+	•	Grote koptekst: “WoningVrij”
+	•	Subtekst: “Zakelijke hypotheken zonder BKR”
+	•	Call to action: “Bekijk hoe het werkt”
+	3.	Hoe het werkt:
+	•	3 stappen met iconen in grijstinten
+	•	Horizontaal of grid layout
+	4.	Voordelen:
+	•	Cards met pictogrammen
+	•	Bijvoorbeeld: Geen BKR, Lage maandlasten, Zelfstandige bouw
+	5.	Stedenoverzicht:
+	•	Grayscale foto’s per stad in raster
+	•	Hover: lichte zoom-in met subtiele schaduw
+	6.	Veelgestelde vragen:
+	•	Accordion-stijl met plus/minus toggle
+	•	Geen animatie tenzij langzaam fade-in
+	7.	Footer:
+	•	E-mail & contactinformatie
+	•	Disclaimer
+	•	Alles gecentreerd, kleine tekst
+
+Technische structuur:
+	•	HTML5 + CSS3 (gebruik Tailwind-achtige classes of schrijf clean zelf)
+	•	JavaScript alleen voor navigatie & scroll/accordion
+	•	Geen frameworks
+	•	Geen tracking, geen login, geen registratie
+
+Slotinstructie aan Replit:
+
+“Bouw een moderne en luxe ogende website voor WoningVrij in zwart-wit/grijs-stijl met rustige, elegante typografie en veel witruimte. Gebruik HTML/CSS/JS zonder frameworks. Geen felle kleuren, geen accountfuncties. Alleen visueel sterke, informatieve pagina’s.
