@@ -189,6 +189,12 @@ header.sticky {
   letter-spacing: -0.02em;
 }
 
+.logo-image {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
 .nav__checkbox {
   display: none;
 }
@@ -268,7 +274,7 @@ header.sticky {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('attached_assets/20250510_1722_Modern Artful Community_simple_compose_01jtxcjwnffbcs18hybeahegfx.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -320,7 +326,7 @@ header.sticky {
   left: 0;
   width: 100%;
   height: 120%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZXJuJTIwaG91c2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('attached_assets/20250510_1714_Modern Scandinavian Apartment_simple_compose_01jtxc3ykgf9nre663k3zpmdmn.png');
   background-size: cover;
   background-position: center;
   transform: translateZ(0);
