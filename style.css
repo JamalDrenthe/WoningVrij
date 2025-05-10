@@ -581,6 +581,14 @@ section {
   font-weight: 300;
 }
 
+.footer-note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #999;
+  font-weight: 300;
+}
+
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 3rem;
