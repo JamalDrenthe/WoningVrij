@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WoningVrij - Zonder BKR. Zonder hypotheek. Wél een woning.</title>
   <meta name="description" content="Via een non-hypotheekmodel kom je in aanmerking voor woningen van €200.000 tot €650.000 — van appartement tot villa.">
-  <link rel="stylesheet" href="style-new.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -204,33 +204,94 @@
         </div>
       </div>
       
-      <div class="locaties fade-in">
+      <div class="locaties-section fade-in">
         <h3>Beschikbare locaties</h3>
-        <div class="locaties__grid">
-          <div class="locatie">
-            <h4>Amsterdam</h4>
-            <p>Nieuw-West, Zuidoost, Noord</p>
+        <div class="horizontal-scroll-section">
+          <div class="scroll-card snap-center">
+            <div class="scroll-card__image scroll-card__image--amsterdam"></div>
+            <div class="scroll-card__content">
+              <h4>Amsterdam</h4>
+              <p>Nieuw-West, Zuidoost, Noord</p>
+              <ul>
+                <li>Appartementen vanaf €250.000</li>
+                <li>Rijtjeshuizen vanaf €380.000</li>
+                <li>Dichtbij OV-verbindingen</li>
+              </ul>
+            </div>
           </div>
-          <div class="locatie">
-            <h4>Rotterdam</h4>
-            <p>Prins Alexander, Zuid, Charlois</p>
+          
+          <div class="scroll-card snap-center">
+            <div class="scroll-card__image scroll-card__image--rotterdam"></div>
+            <div class="scroll-card__content">
+              <h4>Rotterdam</h4>
+              <p>Prins Alexander, Zuid, Charlois</p>
+              <ul>
+                <li>Moderne architectuur</li>
+                <li>Innovatieve woonoplossingen</li>
+                <li>Nabij culturele hotspots</li>
+              </ul>
+            </div>
           </div>
-          <div class="locatie">
-            <h4>Utrecht</h4>
-            <p>Leidsche Rijn, Overvecht</p>
+          
+          <div class="scroll-card snap-center">
+            <div class="scroll-card__image scroll-card__image--utrecht"></div>
+            <div class="scroll-card__content">
+              <h4>Utrecht</h4>
+              <p>Leidsche Rijn, Overvecht</p>
+              <ul>
+                <li>Centraal gelegen in Nederland</li>
+                <li>Historische binnenstad nabij</li>
+                <li>Perfecte mix stad en natuur</li>
+              </ul>
+            </div>
           </div>
-          <div class="locatie">
-            <h4>Almere</h4>
-            <p>Poort, Buiten, Haven</p>
+          
+          <div class="scroll-card snap-center">
+            <div class="scroll-card__image scroll-card__image--almere"></div>
+            <div class="scroll-card__content">
+              <h4>Almere</h4>
+              <p>Poort, Buiten, Haven</p>
+              <ul>
+                <li>Nieuwbouw mogelijkheden</li>
+                <li>Ruim opgezette wijken</li>
+                <li>Dichtbij Amsterdam</li>
+              </ul>
+            </div>
           </div>
-          <div class="locatie">
-            <h4>Eindhoven</h4>
-            <p>Woensel, Meerhoven</p>
+          
+          <div class="scroll-card snap-center">
+            <div class="scroll-card__image scroll-card__image--eindhoven"></div>
+            <div class="scroll-card__content">
+              <h4>Eindhoven</h4>
+              <p>Woensel, Meerhoven</p>
+              <ul>
+                <li>Tech-hub van Nederland</li>
+                <li>Internationale community</li>
+                <li>Uitstekende carrièrekansen</li>
+              </ul>
+            </div>
           </div>
-          <div class="locatie">
-            <h4>Groningen</h4>
-            <p>Meerstad, Paddepoel</p>
+          
+          <div class="scroll-card snap-center">
+            <div class="scroll-card__image scroll-card__image--groningen"></div>
+            <div class="scroll-card__content">
+              <h4>Groningen</h4>
+              <p>Meerstad, Paddepoel</p>
+              <ul>
+                <li>Studentenstad met energie</li>
+                <li>Betaalbare woningmarkt</li>
+                <li>Omringd door natuur</li>
+              </ul>
+            </div>
           </div>
+        </div>
+        
+        <div class="scroll-indicator">
+          <span>Scroll voor meer locaties</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
         </div>
       </div>
     </div>
@@ -383,6 +444,6 @@
     </div>
   </footer>
 
-  <script src="script-new.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+Toevoegingen voor bestaande Replit-site (1 op 1)
+
+1. Horizontale scrollsectie (voor “Woningen & Locaties”)
+
+<section class="horizontal-scroll-section overflow-x-auto whitespace-nowrap scroll-smooth snap-x snap-mandatory px-4 py-8">
+  <div class="inline-block w-[300px] h-[400px] bg-white shadow-md mx-2 snap-center">Amsterdam</div>
+  <div class="inline-block w-[300px] h-[400px] bg-white shadow-md mx-2 snap-center">Rotterdam</div>
+  <div class="inline-block w-[300px] h-[400px] bg-white shadow-md mx-2 snap-center">Utrecht</div>
+  <div class="inline-block w-[300px] h-[400px] bg-white shadow-md mx-2 snap-center">Eindhoven</div>
+</section>
+
+Tailwind classes:
+	•	overflow-x-auto, whitespace-nowrap, snap-x, snap-mandatory
+	•	inline-block, snap-center per kaart
+
+2. Parallax achtergrond voor hero-sectie
+
+<section class="h-[80vh] bg-[url('/img/hero.jpg')] bg-cover bg-center bg-fixed flex items-center justify-center text-white">
+  <div class="text-center px-4">
+    <h1 class="text-4xl font-bold">WoningVrij. Zonder BKR. Wél een woning.</h1>
+    <p class="mt-4 text-xl">Non-hypotheek woningen van €200.000 tot €650.000</p>
+  </div>
+</section>
+
+CSS fallback mobiel:
+
+@media (max-width: 768px) {
+  .bg-fixed {
+    background-attachment: scroll !important;
+  }
+}
+
+3. (Optioneel) Parallax met IntersectionObserver (voor lichte JS)
+
+<section class="relative h-[100vh] overflow-hidden">
+  <div class="absolute top-0 left-0 w-full h-full parallax-bg bg-[url('/img/bg.jpg')] bg-cover bg-center -z-10"></div>
+  <div class="relative z-10 p-8 text-white">
+    <h2 class="text-4xl font-bold">Ervaar wonen anders</h2>
+  </div>
+</section>
+
+<script>
+  const bg = document.querySelector('.parallax-bg');
+  window.addEventListener('scroll', () => {
+    const offset = window.scrollY * 0.5;
+    bg.style.transform = `translateY(${offset}px)`;
+  });
+</script>
+
+4. Mobiele fallback horizontale scroll als slider
+
+<div class="flex overflow-x-scroll space-x-4 snap-x snap-mandatory px-4 py-8">
+  <div class="min-w-[250px] bg-white shadow-md rounded-lg snap-center p-4">Amsterdam</div>
+  <div class="min-w-[250px] bg-white shadow-md rounded-lg snap-center p-4">Rotterdam</div>
+  <div class="min-w-[250px] bg-white shadow-md rounded-lg snap-center p-4">Utrecht</div>
+</div>

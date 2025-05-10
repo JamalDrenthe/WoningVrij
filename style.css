@@ -255,13 +255,31 @@ header.sticky {
   display: flex;
   align-items: center;
   background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: left;
+  margin-top: 70px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80');
   background-size: cover;
   background-position: center;
-  color: var(--color-white);
   background-attachment: fixed;
-  text-align: left;
-  margin-top: 70px;
+  transform: translateZ(0);
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .hero::before {
+    background-attachment: scroll !important;
+  }
 }
 
 .hero__content {
@@ -435,37 +453,141 @@ header.sticky {
   color: var(--color-gold);
 }
 
-.locaties {
-  max-width: 800px;
-  margin: 0 auto;
+.locaties-section {
+  margin-top: var(--spacing-xl);
 }
 
-.locaties h3 {
+.locaties-section h3 {
   text-align: center;
   margin-bottom: var(--spacing-md);
 }
 
-.locaties__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: var(--spacing-md);
+.horizontal-scroll-section {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: var(--spacing-sm) 0;
+  margin: 0 -20px;
+  padding: 0 20px;
+  scrollbar-width: none; /* Firefox */
 }
 
-.locatie {
-  text-align: center;
-  padding: var(--spacing-sm);
-  background-color: var(--color-light-gray);
+.horizontal-scroll-section::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
-.locatie h4 {
+.scroll-card {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 450px;
+  background-color: var(--color-white);
+  margin-right: var(--spacing-md);
+  box-shadow: var(--shadow-small);
+  scroll-snap-align: center;
+  transition: all var(--transition-medium);
+  overflow: hidden;
+  white-space: normal;
+  border: 1px solid var(--color-light-gray);
+}
+
+.scroll-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.scroll-card__image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.scroll-card__image--amsterdam {
+  background-image: url('https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW1zdGVyZGFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+}
+
+.scroll-card__image--rotterdam {
+  background-image: url('https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm90dGVyZGFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+}
+
+.scroll-card__image--utrecht {
+  background-image: url('https://images.unsplash.com/photo-1541580621-39f717ce77e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXRyZWNodHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.scroll-card__image--almere {
+  background-image: url('https://images.unsplash.com/photo-1558882224-dda166733046?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV0aGVybGFuZHMlMjBjaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+}
+
+.scroll-card__image--eindhoven {
+  background-image: url('https://images.unsplash.com/photo-1560260240-c6ef90a163a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWluZGhvdmVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+}
+
+.scroll-card__image--groningen {
+  background-image: url('https://images.unsplash.com/photo-1571073413888-eef2b535b410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JvbmluamdjbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+}
+
+.scroll-card__content {
+  padding: var(--spacing-md);
+}
+
+.scroll-card__content h4 {
+  font-size: 1.2rem;
   margin-bottom: var(--spacing-xs);
-  font-size: 1.1rem;
+  color: var(--color-black);
 }
 
-.locatie p {
+.scroll-card__content p {
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-medium-gray);
+}
+
+.scroll-card__content ul {
+  list-style-type: none;
   margin: 0;
+}
+
+.scroll-card__content li {
+  position: relative;
+  padding-left: var(--spacing-md);
+  margin-bottom: 6px;
   font-size: 0.9rem;
   color: var(--color-medium-gray);
+}
+
+.scroll-card__content li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+}
+
+.scroll-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--spacing-md);
+  color: var(--color-medium-gray);
+  font-size: 0.9rem;
+}
+
+.scroll-indicator svg {
+  margin-left: var(--spacing-xs);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(3px);
+  }
 }
 
 /* FAQ Section */
