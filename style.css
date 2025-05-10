@@ -565,27 +565,27 @@ header.sticky {
 }
 
 .scroll-card__image--amsterdam {
-  background-image: url('https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW1zdGVyZGFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+  background-image: url('attached_assets/20250510_1722_Modern Artful Community_simple_compose_01jtxcjwnefdqvcn6kj1774cep.png');
 }
 
 .scroll-card__image--rotterdam {
-  background-image: url('https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm90dGVyZGFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+  background-image: url('attached_assets/20250510_1714_Modern Scandinavian Apartment_simple_compose_01jtxc3ykgf9nre663k3zpmdmn.png');
 }
 
 .scroll-card__image--utrecht {
-  background-image: url('https://images.unsplash.com/photo-1541580621-39f717ce77e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXRyZWNodHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+  background-image: url('attached_assets/20250510_1722_Modern Artful Community_simple_compose_01jtxcjwnffbcs18hybeahegfx.png');
 }
 
 .scroll-card__image--almere {
-  background-image: url('https://images.unsplash.com/photo-1558882224-dda166733046?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV0aGVybGFuZHMlMjBjaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+  background-image: url('attached_assets/20250510_1714_Luxury Bedroom Serenity_simple_compose_01jtxc54sbej1sqqpzen90c83y.png');
 }
 
 .scroll-card__image--eindhoven {
-  background-image: url('https://images.unsplash.com/photo-1560260240-c6ef90a163a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWluZGhvdmVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+  background-image: url('attached_assets/20250510_1719_Luxury Bedroom Oasis_simple_compose_01jtxcemdwfjktph976sg69wpt.png');
 }
 
 .scroll-card__image--groningen {
-  background-image: url('https://images.unsplash.com/photo-1571073413888-eef2b535b410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JvbmluamdjbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+  background-image: url('attached_assets/20250510_1714_Luxury Bedroom Serenity_simple_compose_01jtxc54sbej1sqqpzen90c83y.png');
 }
 
 .scroll-card__content {
@@ -803,10 +803,9 @@ header.sticky {
   margin-bottom: var(--spacing-lg);
 }
 
-.footer-logo span {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.5rem;
+.footer-logo-image {
+  height: 40px;
+  width: auto;
   display: block;
   margin-bottom: var(--spacing-sm);
 }
