@@ -1,0 +1,130 @@
+WoningVrij Website (zonder accountfunctionaliteit)
+
+Doel van de website:
+
+Ontwerp een stijlvolle, informatieve én mobielvriendelijke website voor WoningVrij — een platform dat zakelijke hypotheken aanbiedt aan mensen die normaal geen toegang krijgen tot een woning. Er is geen registratie, geen login, alleen informatieve content die vertrouwen wekt.
+
+Techniek & Structuur:
+	•	Gebruik HTML5, CSS3, en JavaScript (zonder frameworks)
+	•	Geen accounts, geen formulieren met gebruikersdata
+	•	Responsive voor mobiel en desktop
+	•	Alles in drie gescheiden bestanden: index.html, style.css, script.js
+
+Design & Navigatie:
+
+Gebruik onderstaande header en navigatiestijl. Deze moet volledig worden overgenomen en aangevuld met jouw gewenste onderdelen:
+
+HTML (kopieer in <header> van index.html):
+
+<header class="sticky">
+  <div class="inner-container">
+    <nav class="nav">
+      <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+      <label for="nav__checkbox" class="nav__toggle">
+        <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+          <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+        </svg>
+        <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+          <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+        </svg>
+      </label>
+      <ul id="nav-logo" class="nav__menu">
+        <li>
+          <a href="#">
+            <img src="https://firebasestorage.googleapis.com/v0/b/wallingapp.appspot.com/o/attachments%2FDFOrzPmkpaj9CzoI0k2L1pRQPt4i9wo0bAeIDNpWYGuuF6kSX5.png?alt=media" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+CSS (style.css)
+
+Gebruik deze basis, inclusief Google Fonts en fade-in ondersteuning:
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1c2534;
+  font-family: "Mulish", sans-serif;
+  background-color: #f9fafb;
+}
+
+.inner-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: "Overpass", sans-serif;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+JS (script.js)
+
+Zorg voor parallax header en fade-in bij scroll:
+
+// Parallax header (optioneel element met class 'parallax')
+window.addEventListener("scroll", () => {
+  const scrolled = window.pageYOffset;
+  const parallax = document.querySelector(".parallax");
+  if (parallax) {
+    parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+  }
+});
+
+// Fade-in effecten
+const fadeEls = document.querySelectorAll(".fade-in");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.1 });
+
+fadeEls.forEach(el => observer.observe(el));
+
+Inhoud van de Website (index.html):
+
+Gebruik secties zoals:
+	•	Intro: Wat is WoningVrij?
+	•	Hoe werkt het: uitleg in 3 of 4 stappen
+	•	Voordelen: in cards of iconen
+	•	Steden: 6 blokken met info (Amsterdam, Utrecht, etc.)
+	•	Veelgestelde Vragen: collapsible/accordion
+	•	Footer: contactgegevens, e-mailadres, geen formulier
+
+Geen login/accountfunctionaliteit betekent:
+	•	Geen registratieformulier
+	•	Geen cookies/sessies
+	•	Geen protected routes
+	•	Alleen informatieve content en navigatie
+
+Eindinstructie aan Replit AI:
+
+“Gebruik bovenstaande structuur en bouw een responsive website voor WoningVrij zonder accountfunctionaliteit. De site moet stijlvol, helder en direct zijn. Gebruik HTML, CSS en JavaScript (geen frameworks). Geef alles in gescheiden bestanden.
